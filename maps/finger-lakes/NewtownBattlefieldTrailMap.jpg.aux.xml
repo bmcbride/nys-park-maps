@@ -1,0 +1,32 @@
+<PAMDataset>
+  <SRS>PROJCS["NAD_1983_UTM_Zone_18N",GEOGCS["GCS_North_American_1983",DATUM["North_American_Datum_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-75.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]</SRS>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="AUTHOR">NYS Parks</MDI>
+    <MDI key="CREATION_DATE">D:20151105122629Z</MDI>
+    <MDI key="CREATOR">Esri ArcMap 10.2.2.3552</MDI>
+    <MDI key="KEYWORDS">Newtown Battlefield State Park Trail Map, Finger Lakes</MDI>
+    <MDI key="NEATLINE">POLYGON ((354916.813086986 4655141.74610211,354916.543677956 4658520.86402702,357075.194236909 4658520.23692863,357075.688075181 4655142.27193938,354916.813086986 4655141.74610211))</MDI>
+    <MDI key="SUBJECT">Newtown Battlefield State Park Trail Map</MDI>
+    <MDI key="TITLE">Newtown Battlefield State Park Trail Map</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

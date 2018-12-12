@@ -1,0 +1,32 @@
+<PAMDataset>
+  <SRS>PROJCS["NAD_1927_UTM_Zone_18N",GEOGCS["GCS_North_American_1927",DATUM["North_American_Datum_1927",SPHEROID["Clarke_1866",6378206.4,294.9786982]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-75.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0],VERTCS["Unknown VCS",VDATUM["Unknown"],PARAMETER["Vertical_Shift",0.0],PARAMETER["Direction",1.0],UNIT["Meter",1.0]]]</SRS>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="AUTHOR">NYS Parks</MDI>
+    <MDI key="CREATION_DATE">D:20150206152606Z</MDI>
+    <MDI key="CREATOR">Esri ArcMap 10.2.2.3552</MDI>
+    <MDI key="KEYWORDS">Saratoga Spa, Saratoga Springs, Saratoga, 5 Mile Trail, Trail, Hiking, Hike, Run, Running, Race, 5 Mile, Map, Loop</MDI>
+    <MDI key="NEATLINE">POLYGON ((596294.834537499 4765959.67264197,596295.273221873 4768241.09162673,598035.776399387 4768240.2988946,598035.902557027 4765959.98096159,596294.834537499 4765959.67264197))</MDI>
+    <MDI key="SUBJECT">Saratoga Spa</MDI>
+    <MDI key="TITLE">Saratoga Spa State Park 5 Mile Trail</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

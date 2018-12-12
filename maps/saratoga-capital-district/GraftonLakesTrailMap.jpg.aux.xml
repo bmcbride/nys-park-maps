@@ -1,0 +1,32 @@
+<PAMDataset>
+  <SRS>PROJCS["NAD_1983_UTM_Zone_18N",GEOGCS["GCS_North_American_1983",DATUM["North_American_Datum_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-75.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]</SRS>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="AUTHOR">NYS Parks</MDI>
+    <MDI key="CREATION_DATE">D:20160315141103Z</MDI>
+    <MDI key="CREATOR">Esri ArcMap 10.2.2.3552</MDI>
+    <MDI key="KEYWORDS">Grafton Lakes State Park Trails Map, Saratoga Region</MDI>
+    <MDI key="NEATLINE">POLYGON ((623415.717065579 4732347.53279135,623415.860465841 4742768.19551081,630076.567359153 4742768.57314803,630076.659750455 4732347.51548737,623415.717065579 4732347.53279135))</MDI>
+    <MDI key="SUBJECT">Grafton Lakes State Park Trails Map</MDI>
+    <MDI key="TITLE">Grafton Lakes State Park Trails Map</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

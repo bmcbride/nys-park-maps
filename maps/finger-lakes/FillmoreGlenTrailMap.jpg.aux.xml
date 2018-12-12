@@ -1,0 +1,32 @@
+<PAMDataset>
+  <SRS>PROJCS["NAD_1983_UTM_Zone_18N",GEOGCS["GCS_North_American_1983",DATUM["North_American_Datum_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-75.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]</SRS>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="AUTHOR">NYS Parks</MDI>
+    <MDI key="CREATION_DATE">D:20150319082829Z</MDI>
+    <MDI key="CREATOR">Esri ArcMap 10.2.2.3552</MDI>
+    <MDI key="KEYWORDS">Fillmore Glen State Park Trail Map, Finger Lakes Region</MDI>
+    <MDI key="NEATLINE">POLYGON ((381819.381391697 4725449.16876308,381819.206780051 4729901.16174379,388786.568927304 4729901.12069394,388787.108898939 4725448.17229503,381819.381391697 4725449.16876308))</MDI>
+    <MDI key="SUBJECT">Fillmore Glen State Park Trail Map</MDI>
+    <MDI key="TITLE">Fillmore Glen State Park Trail Map</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
