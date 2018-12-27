@@ -834,7 +834,7 @@
   "url": "https://bryanmcbride.com/nys-parks-maps/maps/taconic/OgdenMillsTrailMap.jpg",
   "size": "506 KB",
   "projection": ["EPSG:26918","+proj=utm +zone=18 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"],
-  "extent": [590773.921, 4630003.97, 587103.317, 4636050.346]
+  "extent": [587103.317, 4630004.551, 590773.978, 4636050.346]
 }, {
   "region": "taconic",
   "name": "Taconic State Park - North",
