@@ -409,7 +409,7 @@ app.functions = {
         caches.open("map-cache").then(function(cache) { 
           cache.keys().then(function(requests) { 
             const urls = requests.map(map => { 
-              return map.url.split(window.location.origin)[1].substring(1);
+              return map.url.substring(map.url.indexOf('/maps/')).substring(1);
             });
             return urls
           }).then(function(urls) {
