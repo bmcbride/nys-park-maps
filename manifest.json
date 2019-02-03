@@ -1,6 +1,6 @@
 {
   "name": "New York State Parks Maps",
-  "short_name": "NYS Parks Maps",
+  "short_name": "NYS Parks",
   "description": "Save your favorite New York State park maps to your mobile device for offline viewing and navigation!",
   "start_url": "index.html",
   "display": "standalone",
