@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Custom color theme */
+:root {
+  --f7-theme-color: #2196f3;
+  --f7-theme-color-rgb: 33, 150, 243;
+  --f7-theme-color-shade: #0c82df;
+  --f7-theme-color-tint: #48a8f5;
+}
+/* Invert navigation bars to fill style */
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --f7-bars-bg-color: var(--f7-theme-color);
+  --f7-bars-text-color: #fff;
+  --f7-bars-link-color: #fff;
+  --f7-navbar-subtitle-text-color: rgba(255,255,255,0.85);
+  --f7-bars-border-color: transparent;
+  --f7-tabbar-link-active-color: #fff;
+  --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
+  --f7-searchbar-input-bg-color: #fff;
+  --f7-sheet-border-color: transparent;
+  --f7-tabbar-link-active-border-color: #fff;
+}
+.navbar,
+.toolbar,
+.subnavbar,
+.calendar-header,
+.calendar-footer {
+  --f7-touch-ripple-color: var(--f7-touch-ripple-white);
+  --f7-link-highlight-color: var(--f7-link-highlight-white);
+  --f7-button-text-color: #fff;
+  --f7-button-pressed-bg-color: rgba(255,255,255,0.1);
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.crosshair {
+  visibility: hidden;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: transparent url(../img/crosshair.svg) 0 0 no-repeat scroll;
+  top: 50%;
+  left: 50%;
+  margin: -27px 0 0 -27px;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 1;
+}
+
+.ol-attribution {
+  max-width: calc(100%);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.region-title {
+  background: #f4f4f4;
+}
+
+.list {
+  margin: 0px!important;
+}
+
+.panel, .panel-backdrop {
+  z-index: 99999;
+}
+
+@media screen and (max-device-width: 320px) and (orientation: portrait){
+  .navbar .title {
+    font-size: 17px;
+  }
+}
