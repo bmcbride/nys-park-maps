@@ -4,8 +4,8 @@
   "description": "Save your favorite New York State Park maps to your mobile device for offline viewing and navigation!",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color":  "#2196f3",
-  "theme_color": "#2196f3",
+  "background_color":  "#233E2A",
+  "theme_color": "#233E2A",
   "icons": [
     {
       "src": "assets/img/icon.png",

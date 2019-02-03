@@ -414,7 +414,7 @@ app.functions = {
             return urls
           }).then(function(urls) {
             for (const url of urls) {
-              $$("[url='"+url+"']").find(".color-gray").addClass("color-blue").removeClass("color-gray");
+              $$("[url='"+url+"']").find(".color-gray").addClass("--f7-theme-color").removeClass("color-gray");
               $$("[url='"+url+"']").find(".icon").html("check_circle");
             }
           });
