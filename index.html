@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#2196f3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0084e7">
-    <meta name="description" content="Save your favorite New York State park maps to your mobile device for offline viewing and navigation!">
+    <meta name="description" content="Save your favorite New York State Park maps to your mobile device for offline viewing and navigation!">
     <meta name="author" content="Bryan McBride">
-    <title>NYS Parks Maps</title>
+    <title>NYS Park Maps</title>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -26,7 +26,7 @@
             <div class="page">
               <div class="navbar">
                 <div class="navbar-inner">
-                  <div class="title">App Settings</div>
+                  <div class="title">Settings</div>
                   <div class="right">
                     <a href="#" class="link icon-only panel-close" data-panel="right">
                       <i class="icon material-icons">close</i>
@@ -35,138 +35,159 @@
                 </div>
               </div>
               <div class="page-content">
-                <div class="block">
-                    <p>Save your favorite New York State park maps to your mobile device for offline viewing and navigation!</p>
-                    <!-- <p>Please be considerate of other park users and report any accident/incident immediately to park staff. All boundaries and trails are shown as approximate. Be aware of changing trail conditions and check with the park office for current conditions.</p>
-                    <p>All maps produced and provided by <a href="https://parks.ny.gov/recreation/trails/trails-in-state-parks.aspx" class="external">NYS Office of Parks, Recreation, and Historic Preservation</a>. This application is in no way affiliated with or endorsed by NYS OPRHP and the accuracy of the information contained on these maps cannot be guaranteed. The maps provided by this application are provided for informational and planning purposes only and we are not responsible for any misuse or misrepresentation of the data.</p> -->
-                  </div>
-                  <div class="block-title">Filter Regions</div>
-                  <div class="list" id="region-filter-list">
-                    <ul>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="allegany" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">ALLEGANY</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="central" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">CENTRAL</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="finger-lakes" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">FINGER LAKES</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="genesee" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">GENESSEE</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="long-island" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">LONG ISLAND</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="new-york-city" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">NEW YORK CITY</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="niagara" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">NIAGARA</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="palisades" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">PALISADES</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="saratoga-capital-district" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">CAPITAL DISTRICT</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="taconic" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">TACONIC</div>
-                          </div>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="item-checkbox item-content">
-                          <input type="checkbox" name="region-filter" value="thousand-islands" checked/>
-                          <i class="icon icon-checkbox"></i>
-                          <div class="item-inner">
-                            <div class="item-title">THOUSAND ISLANDS</div>
-                          </div>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="block-title">Open Source Libraries</div>
-                  <div class="list links-list">
-                    <ul>
-                      <li>
-                        <a href="https://framework7.io/" class="external">Framework7</a>
-                      </li>
-                      <li>
-                        <a href="http://openlayers.org/" class="external">OpenLayers</a>
-                      </li>
-                      <li>
-                        <a href="http://proj4js.org/" class="external">Proj4js</a>
-                      </li>
-                      <li>
-                        <a href="https://material.io/icons/" class="external">Material Icons</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="block-title">Credits</div>
-                  <div class="list simple-list">
-                    <ul>
-                      <li>Developed by Bryan McBride</li>
-                    </ul>
-                  </div>
+                <div class="list accordion-list">
+                  <ul>
+                    <li class="accordion-item accordion-item-opened"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">About</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="block">
+                          <p>Search for your favorite New York State Park and tap the <i class="icon material-icons">save_alt</i> button to save the map to your device for offline viewing and navigation!</p>
+                          <p>This app and any explicitly saved maps are available even when offline. Save the app to your home screen for easy access.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Disclaimer</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="block">
+                            <p>Please be considerate of other park users and report any accident/incident immediately to park staff. All boundaries and trails are shown as approximate. Be aware of changing trail conditions and check with the park office for current conditions.</p>
+                            <p>All maps produced and provided by <a href="https://parks.ny.gov/recreation/trails/trails-in-state-parks.aspx" class="external">NYS Office of Parks, Recreation, and Historic Preservation</a>. This application is in no way affiliated with or endorsed by NYS OPRHP and the accuracy of the information contained on these maps cannot be guaranteed. The maps provided by this application are provided for informational and planning purposes only and we are not responsible for any misuse or misrepresentation of the data.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-title">Filter Regions</div>
+                <div class="list" id="region-filter-list">
+                  <ul>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="allegany" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">ALLEGANY</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="central" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">CENTRAL</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="finger-lakes" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">FINGER LAKES</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="genesee" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">GENESSEE</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="long-island" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">LONG ISLAND</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="new-york-city" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">NEW YORK CITY</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="niagara" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">NIAGARA</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="palisades" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">PALISADES</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="saratoga-capital-district" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">CAPITAL DISTRICT</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="taconic" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">TACONIC</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="region-filter" value="thousand-islands" checked/>
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">THOUSAND ISLANDS</div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-title">Open Source Libraries</div>
+                <div class="list links-list">
+                  <ul>
+                    <li>
+                      <a href="https://framework7.io/" class="external">Framework7</a>
+                    </li>
+                    <li>
+                      <a href="http://openlayers.org/" class="external">OpenLayers</a>
+                    </li>
+                    <li>
+                      <a href="http://proj4js.org/" class="external">Proj4js</a>
+                    </li>
+                    <li>
+                      <a href="https://material.io/icons/" class="external">Material Icons</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-title">Credits</div>
+                <div class="list simple-list">
+                  <ul>
+                    <li>Developed by Bryan McBride</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -271,7 +292,7 @@
                   <i class="icon material-icons">menu</i>
                 </a>
               </div>  
-              <div class="title sliding">NYS Parks Maps</div>
+              <div class="title sliding">NYS Park Maps</div>
                 <div class="right">
                   <a class="link icon-only" onclick="app.accordion.toggle('.accordion-item');">
                     <i class="icon material-icons">swap_vert</i>

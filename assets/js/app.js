@@ -314,7 +314,7 @@ app.functions = {
         if (match) {
           app.dialog.confirm("Remove <b>" + name + "</b> map from your device?", null, function() {
             cache.delete(match.url).then(function() { 
-              $$("[name='"+name+"']").find(".color-blue").addClass("color-gray").removeClass("color-blue");
+              $$("[name='"+name+"']").find(".--f7-theme-color").addClass("color-gray").removeClass("--f7-theme-color");
               $$("[name='"+name+"']").find(".icon").html("save_alt");
               app.toast.create({
                 text: "Map removed!",
@@ -327,7 +327,7 @@ app.functions = {
           app.dialog.confirm("Save <b>" + name + "</b> map to your device?", null, function() {
             app.progressbar.show("white");
             cache.add(url).then(function() { 
-              $$("[name='"+name+"']").find(".color-gray").addClass("color-blue").removeClass("color-gray");
+              $$("[name='"+name+"']").find(".color-gray").addClass("--f7-theme-color").removeClass("color-gray");
               $$("[name='"+name+"']").find(".icon").html("check_circle");
               app.progressbar.hide();
               app.toast.create({

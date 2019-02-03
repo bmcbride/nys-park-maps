@@ -24,10 +24,10 @@
 
 /* Custom color theme */
 :root {
-  --f7-theme-color: #2196f3;
-  --f7-theme-color-rgb: 33, 150, 243;
-  --f7-theme-color-shade: #0c82df;
-  --f7-theme-color-tint: #48a8f5;
+  --f7-theme-color: #233E2A;
+  --f7-theme-color-rgb: 35, 62, 42;
+  --f7-theme-color-shade: #142418;
+  --f7-theme-color-tint: #32583c;
 }
 /* Invert navigation bars to fill style */
 :root,
