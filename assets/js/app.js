@@ -539,6 +539,22 @@ app.functions = {
         });
       }
     }
+  },
+
+  test: function() {
+    caches.open("map-cache").then(function(cache) { 
+      cache.keys().then(function(requests) { 
+        const urls = requests.map(map => { 
+          return map.url.split(document.URL)[1];
+        });
+        return urls
+      }).then(function(urls) {
+        for (const url of urls) {
+          $$("[url='"+url+"']").find(".color-gray").addClass("color-blue").removeClass("color-gray");
+          $$("[url='"+url+"']").find(".icon").html("check_circle");
+        }
+      });
+    });
   }
 }
 
