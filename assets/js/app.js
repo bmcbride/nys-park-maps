@@ -515,7 +515,7 @@ app.functions = {
   
         sessionStorage.setItem("settings", JSON.stringify({
           activeLayer: value.name,
-          regions: JSON.parse(sessionStorage.getItem("settings")).regions ? JSON.parse(sessionStorage.getItem("settings")).regions : null,
+          regions: (JSON.parse(sessionStorage.getItem("settings")) && JSON.parse(sessionStorage.getItem("settings")).regions) ? JSON.parse(sessionStorage.getItem("settings")).regions : null,
           basemap: ($$("input[name='basemap']:checked").val() != "none") ? $$("input[name='basemap']:checked").val() : null,
           opacity: app.layers.image.getOpacity(),
           state: app.map.getView().getState()
