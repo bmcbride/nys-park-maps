@@ -515,7 +515,6 @@ app.functions = {
   
         sessionStorage.setItem("settings", JSON.stringify({
           activeLayer: value.name,
-          regions: (JSON.parse(sessionStorage.getItem("settings")) && JSON.parse(sessionStorage.getItem("settings")).regions) ? JSON.parse(sessionStorage.getItem("settings")).regions : null,
           basemap: ($$("input[name='basemap']:checked").val() != "none") ? $$("input[name='basemap']:checked").val() : null,
           opacity: app.layers.image.getOpacity(),
           state: app.map.getView().getState()
@@ -579,7 +578,7 @@ $$("input[type=radio][name=basemap]").change(function() {
 });
 
 $$("input[type=checkbox][name=region-filter]").change(function() {
-  let settings = sessionStorage.getItem("settings") ? JSON.parse(sessionStorage.getItem("settings")) : {};
+  let settings = localStorage.getItem("settings") ? JSON.parse(localStorage.getItem("settings")) : {};
   let visibleRegions = [];
   $$("#region-filter-list").find("input").each(function(index, element){
     if (element.checked) {
@@ -591,7 +590,7 @@ $$("input[type=checkbox][name=region-filter]").change(function() {
   });
 
   settings.regions = visibleRegions;
-  sessionStorage.setItem("settings", JSON.stringify(settings));
+  localStorage.setItem("settings", JSON.stringify(settings));
 });
 
 $$(".ptr-content").on("ptr:refresh", function (e) {
@@ -602,7 +601,7 @@ app.on("init", function() {
   app.functions.iosChecks();
   app.functions.loadMapList();
 
-  const settings = JSON.parse(sessionStorage.getItem("settings"));
+  const settings = JSON.parse(localStorage.getItem("settings"));
   $$("#region-filter-list").find("input").each(function(index, element){
     if (settings && settings.regions && settings.regions.indexOf(element.value) == -1) {
       element.checked = false;
