@@ -359,7 +359,7 @@ app.functions = {
         
         for (const map of maps) {
           const li = `<li class="map-item" name="${map.name}" url="${map.url}">
-            <a href="#" class="item-link no-chevron" onclick="app.activeLayer = '${map.name}'; app.views.main.router.navigate('/map/');">
+            <a href="#" class="item-link no-chevron" onclick="app.activeLayer='${map.name}'; app.views.main.router.navigate('/map/');">
               <div class="item-content">
                 <div class="item-inner">
                     <div class="item-title">
@@ -515,6 +515,7 @@ app.functions = {
   
         sessionStorage.setItem("settings", JSON.stringify({
           activeLayer: value.name,
+          regions: JSON.parse(sessionStorage.getItem("settings")).regions ? JSON.parse(sessionStorage.getItem("settings")).regions : null,
           basemap: ($$("input[name='basemap']:checked").val() != "none") ? $$("input[name='basemap']:checked").val() : null,
           opacity: app.layers.image.getOpacity(),
           state: app.map.getView().getState()
@@ -578,8 +579,8 @@ $$("input[type=radio][name=basemap]").change(function() {
 });
 
 $$("input[type=checkbox][name=region-filter]").change(function() {
-  const settings = JSON.parse(sessionStorage.getItem("settings"));
-  const visibleRegions = [];
+  let settings = sessionStorage.getItem("settings") ? JSON.parse(sessionStorage.getItem("settings")) : {};
+  let visibleRegions = [];
   $$("#region-filter-list").find("input").each(function(index, element){
     if (element.checked) {
       $$("#" + element.value).show();
