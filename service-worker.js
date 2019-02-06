@@ -15,7 +15,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-02.04.19.1';
+const PRECACHE = 'precache-02.06.19.1';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -28,11 +28,11 @@ const PRECACHE_URLS = [
   'assets/img/icon.png',
   'assets/img/crosshair.svg',
   'assets/img/ios-share.png',
-  'assets/vendor/framework7-4.0.0-beta.34/css/framework7.bundle.min.css',
+  'assets/vendor/framework7-4.0.0-beta.35/css/framework7.bundle.min.css',
   'assets/vendor/openlayers-5.3.0/ol.css',
   'assets/css/app.css',
   'assets/fonts/MaterialIcons-Regular.woff2',
-  'assets/vendor/framework7-4.0.0-beta.34/js/framework7.bundle.min.js',
+  'assets/vendor/framework7-4.0.0-beta.35/js/framework7.bundle.min.js',
   'assets/vendor/openlayers-5.3.0/ol.js',
   'assets/vendor/proj4js-2.5.0/proj4.js',
   'assets/js/app.js'
