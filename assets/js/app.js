@@ -402,8 +402,6 @@ app.functions = {
             app.views.current.router.back();
           }
         }
-
-        app.ptr.done();
       },
       complete: function (xhr, status) {
         caches.open("map-cache").then(function(cache) { 
@@ -422,7 +420,6 @@ app.functions = {
       },
       error: function (xhr, status) {
         app.dialog.alert(xhr.statusText, "Map List Error");
-        app.ptr.done();
       }
     });
   },
@@ -591,10 +588,6 @@ $$("input[type=checkbox][name=region-filter]").change(function() {
 
   settings.regions = visibleRegions;
   localStorage.setItem("settings", JSON.stringify(settings));
-});
-
-$$(".ptr-content").on("ptr:refresh", function (e) {
-  app.functions.loadMapList();
 });
 
 app.on("init", function() {
