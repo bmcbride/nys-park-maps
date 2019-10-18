@@ -23,21 +23,21 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/vendor/framework7-4.1.0/css/framework7.bundle.min.css">
-    <link rel="stylesheet" href="assets/vendor/openlayers-5.3.0/ol.css">
+    <link rel="stylesheet" href="assets/vendor/framework7-5.0.5/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/openlayers-6.0.1/ol.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
     <div id="app">
-      <div class="statusbar"></div>
       <div class="panel panel-left panel-cover">
           <div class="view">
             <div class="page">
               <div class="navbar">
+                <div class="navbar-bg"></div>
                 <div class="navbar-inner">
                   <div class="title">Settings</div>
                   <div class="right">
-                    <a href="#" class="link icon-only panel-close" data-panel="right">
+                    <a href="#" class="link icon-only panel-close" data-panel="left">
                       <i class="icon material-icons">close</i>
                     </a>
                   </div>
@@ -202,6 +202,7 @@
         <div class="view">
           <div class="page">
             <div class="navbar">
+              <div class="navbar-bg"></div>
               <div class="navbar-inner">
                 <div class="title">Settings</div>
                 <div class="right">
@@ -291,6 +292,7 @@
       <div id="view-home" class="view view-main view-init">
         <div class="page" data-name="index">
           <div class="navbar">
+            <div class="navbar-bg"></div>
             <div class="navbar-inner sliding">
               <div class="left">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
@@ -458,6 +460,7 @@
         <div class="view">
           <div class="page" data-name="map">
             <div class="navbar">
+              <div class="navbar-bg"></div>
               <div class="navbar-inner">
                 <div class="left">
                   <a href="#" class="link popup-close">
@@ -476,12 +479,12 @@
               <div id="map" class="map">
                 <div class="crosshair" id="crosshair"></div>
                 <div class="fab fab-right-bottom" id="rotate-btn" style="bottom: 96px; right: 10px; display: none;">
-                  <a href="#" onclick="app.map.getView().rotate(0);">
+                  <a href="#" onclick="app.map.getView().setRotation(0);">
                     <i class="icon material-icons" id="rotate-icon">navigation</i>
                   </a>
                 </div>
                 <div class="fab fab-right-bottom" style="bottom: 30px; right: 10px;">
-                  <a href="#" id="gps-btn" onclick="app.map.getView().setCenter(app.geolocation.getPosition());">
+                  <a href="#" id="gps-btn" class="disabled" onclick="app.map.getView().setCenter(app.geolocation.getPosition());">
                     <i class="icon material-icons" id="gps-icon">gps_not_fixed</i>
                   </a>
                 </div>
@@ -491,8 +494,8 @@
         </div>
       </div>
     </div>
-    <script src="assets/vendor/framework7-4.1.0/js/framework7.bundle.min.js"></script>
-    <script src="assets/vendor/openlayers-5.3.0/ol.js"></script>
+    <script src="assets/vendor/framework7-5.0.5/js/framework7.bundle.min.js"></script>
+    <script src="assets/vendor/openlayers-6.0.1/ol.js"></script>
     <script src="assets/vendor/proj4js-2.5.0/proj4.js"></script>
     <script src="assets/js/app.js"></script>
     <script>
