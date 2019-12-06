@@ -31,12 +31,12 @@ const PRECACHE_URLS = [
   'assets/img/icon.png',
   'assets/img/crosshair.svg',
   'assets/img/ios-share.png',
-  'assets/vendor/framework7-5.0.5/css/framework7.bundle.min.css',
-  'assets/vendor/openlayers-6.0.1/ol.css',
+  'assets/vendor/framework7-5.1.3/css/framework7.bundle.min.css',
+  'assets/vendor/openlayers-6.1.1/ol.css',
   'assets/css/app.css',
   'assets/fonts/MaterialIcons-Regular.woff2',
-  'assets/vendor/framework7-5.0.5/js/framework7.bundle.min.js',
-  'assets/vendor/openlayers-6.0.1/ol.js',
+  'assets/vendor/framework7-5.1.3/js/framework7.bundle.min.js',
+  'assets/vendor/openlayers-6.1.1/ol.js',
   'assets/vendor/proj4js-2.5.0/proj4.js',
   'assets/js/app.js'
 ];
